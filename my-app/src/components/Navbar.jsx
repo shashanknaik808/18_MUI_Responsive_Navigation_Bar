@@ -14,8 +14,13 @@ function Navbar({ links }) {
             backgroundImage: 'linear-gradient(90deg, rgba(180, 58, 58, 1) 2%, rgba(49, 49, 116, 1) 36%, rgba(105, 0, 161, 1) 73%, rgba(166, 69, 252, 1) 100%)'
         }}>
             <Toolbar>
-                
+
                 {isMatch ? <>
+
+                    <Typography>
+                        <ShoppingCartCheckout />
+                    </Typography>
+                    
                     <DrawerComp />
                 </> : <Grid sx={{ placeItems: "center" }} container>
                     <Grid item xs={2}>
