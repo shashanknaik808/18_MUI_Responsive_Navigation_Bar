@@ -15,8 +15,8 @@ function Navbar() {
     return (
         <div>
             <AppBar sx={{
-                backgroundImage: 'linear-gradient(90deg, rgba(100, 58, 58, 1) 2%, rgba(49, 49, 116, 1) 36%, rgba(105, 0, 161, 1) 73%, rgba(166, 69, 252, 1) 100%)'
-            }}>
+            backgroundImage: 'linear-gradient(90deg, rgba(180, 58, 58, 1) 2%, rgba(49, 49, 116, 1) 36%, rgba(105, 0, 161, 1) 73%, rgba(166, 69, 252, 1) 100%)'
+        }}>
                 <Toolbar>
                     <Grid container>
                         <Grid item xs={2}>
