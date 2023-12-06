@@ -13,7 +13,7 @@ function DrawerComp({ links }) {
             }} open={open} onClose={() => setOpen(false)}>
                 <List>
                     {links.map((link, index) => (
-                        <ListItemButton key={index} divider>
+                        <ListItemButton onClick={() => setOpen(false)} key={index} divider>
                             <ListItemIcon>
                                 <ListItemText sx={{ color: "white" }}>
                                     {link}
@@ -23,7 +23,7 @@ function DrawerComp({ links }) {
                     ))}
                 </List>
             </Drawer>
-            
+
             <IconButton sx={{ marginLeft: 'auto', color: "white" }} onClick={() => setOpen(!open)} >
                 <MenuRoundedIcon />
             </IconButton>
