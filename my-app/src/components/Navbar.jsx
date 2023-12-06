@@ -10,6 +10,7 @@ import {
     Typography
 } from '@mui/material';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
+import DrawerComp from './DrawerComp';
 
 function Navbar() {
     return (
@@ -41,6 +42,9 @@ function Navbar() {
                             </Box>
                         </Grid>
                     </Grid>
+
+                    <DrawerComp />
+                    
                 </Toolbar>
             </AppBar>
         </div>
