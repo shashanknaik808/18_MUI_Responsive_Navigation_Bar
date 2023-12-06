@@ -14,7 +14,9 @@ import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 function Navbar() {
     return (
         <div>
-            <AppBar>
+            <AppBar sx={{
+                backgroundImage: 'linear-gradient(90deg, rgba(100, 58, 58, 1) 2%, rgba(49, 49, 116, 1) 36%, rgba(105, 0, 161, 1) 73%, rgba(166, 69, 252, 1) 100%)'
+            }}>
                 <Toolbar>
                     <Grid container>
                         <Grid item xs={2}>
@@ -31,9 +33,11 @@ function Navbar() {
                         </Grid>
                         <Grid item xs={1} />
                         <Grid item xs={3}>
-                            <Box>
-                                <Button variant='contained'>Login</Button>
-                                <Button variant='contained'>SignUp</Button>
+                            <Box display="flex">
+                                <Button sx={{ marginLeft: 'auto' }}
+                                    variant='contained'>Login</Button>
+                                <Button sx={{ marginLeft: 1 }}
+                                    variant='contained'>SignUp</Button>
                             </Box>
                         </Grid>
                     </Grid>
